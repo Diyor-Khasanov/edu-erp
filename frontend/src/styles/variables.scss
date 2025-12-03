@@ -1,0 +1,33 @@
+:root {
+  --color-white: #ffffff;
+  --color-whitesmoke: #f5f5f5;
+  --color-slate: #64748b;
+  --color-gray: #9ca3af;
+  --color-black: #000000;
+
+  --bg-primary: var(--color-whitesmoke);
+  --bg-secondary: var(--color-white);
+  --text-primary: var(--color-black);
+  --text-secondary: var(--color-slate);
+  --border-color: var(--color-gray);
+}
+
+.theme-dark {
+  --bg-primary: #0f172a; // Dark slate
+  --bg-secondary: #1e293b;
+  --text-primary: var(--color-whitesmoke);
+  --text-secondary: var(--color-gray);
+  --border-color: #334155;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
